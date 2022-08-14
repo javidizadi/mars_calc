@@ -1,7 +1,6 @@
 use std::io;
 fn main() {
-    print!("Enter your weight in KG : ");
-    io::stdout().flush().unwrap();
+    println!("Enter your weight in KG : ");
     let mut user_input = String::new();
     io::stdin().read_line(&mut user_input).unwrap();
     let weight: f32 = user_input.trim().parse().unwrap();
